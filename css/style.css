@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+
+:root {
+--Violet: hsl(257, 40%, 49%);
+--Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+
+
+.font-1 {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+p {
+    color: #fff;
+}
+
+
+
+
+html, body{
+    background-image: url(./img-bg/bg-mobile.svg);
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    background-color: var(--Violet);
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo > a > img {
+    transform: scale(0.7);
+    position: relative;
+    top: 10px;
+    left: 2px;
+}
+
+.ilustration {
+     transform: scale(0.8);
+}
+
+.ilustration {
+    position: relative;
+    top: 2px;
+    left: 0px;
+}
+
+
+.information-main {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.information-main h1 {
+    font-size: 2.1em;
+    margin-bottom: 10px;
+}
+
+.information-main p {
+    width: 60%;
+    margin-bottom: 15px;
+}
+
+
+
+.information-main button {
+    display: block;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius:  50px;
+    margin: 15px 0;
+    color: var(--Violet);
+}
+
+
+button:hover {
+   background-color: var(--Soft-Magenta);
+   color: #fff;
+}
+
+
+footer{
+    padding: 20px;
+    margin-bottom: 55px;
+}
+
+footer .row {
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes shake {
+    10% {
+        transform: rotate(15deg);
+    }
+
+    20% {
+        transform: rotate(-15deg);
+    }
+
+    30% {
+        transform: rotate(15deg);
+    }
+
+    20% {
+        transform: rotate(-15deg);
+    }
+}
+
+.circle {
+    width: 45px;
+    height: 45px;
+    outline: 1px solid #fff;
+    border-radius: 50px;
+    margin: 0 10px;
+}
+
+.blue:hover {
+    background-color: #3b5998 !important;
+}
+
+.light-blue:hover {
+    background-color: #1DA1F2 !important;
+}
+
+.insta-color:hover {
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+
+
+.circle, i {
+    color: #fff;
+}
+
+.circle > i {
+  position: relative;
+  top: 10px;
+  left: 15px;
+}
+
+.circle:first-child  > i{
+    left: 17px;
+}
+
+.circle, i {
+    transform: scale(0.9);
+}
+
+.circle {
+    transition-property: outline-offset, outline-color, background-color;
+    transition-duration: 0.25s;
+}
+
+.circle:hover {
+    outline-offset: 4px;
+}
+
+.circle:hover i {
+   animation: shake 0.25s;
+}
+
+
+
+
+
+
+@media (min-width:768px) {
+    
+html, body{
+        background-image: url(./img-bg/bg-desktop.svg);
+        background-size: 100% 120vh !important;
+        background-repeat: no-repeat;
+    }
+
+    .information-main {
+        display: flex;
+        flex-direction: column;
+        justify-content:none;
+        align-items: flex-start;
+        text-align: left !important;
+    }
+
+    .information-main {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 32%;
+        left: 55%;
+    }
+
+    .information-main h1 {
+        font-size: 2.1em;
+        margin-bottom: 0px;
+    }
+
+    .information-main p {
+        width: 75%;
+        margin: 20px 0;
+    }
+
+    
+    .ilustration {
+        position: relative;
+        top: 35px;
+        left: 25px;
+        transform: scale(0.9);
+   }
+
+     .logo > a > img {
+        
+        top: 20px;
+        left: 15px;
+    }
+
+   .row {
+    position: absolute;
+    bottom: 15px;
+    left: 77%;
+}
+
+}
+
+
+@media (min-width:1440px) {
+    
+html, body{
+        background-image: url(./img-bg/bg-desktop.svg);
+        background-size: 100%  100vh !important;
+    }
+
+
+    .logo > a > img {
+        transform: scale(1.0);
+        top: 50px;
+        left: 75px;
+    }
+
+    .information-main h1 {
+        font-size: 2.5em;
+        margin-top: 30px;
+    }
+
+    .information-main p {
+        width: 80%;
+        font-size: 1em;
+        margin: 20px 0;
+    }
+
+    .ilustration {
+        top: 10.7em;
+        left: 105px;
+        transform: scale(1.1);
+   }
+
+   .information-main {
+    top: 33%;
+    left: 60%;
+}
+
+   
+   .row {
+    position: absolute;
+    bottom: 2%;
+    left: 80%;
+}
+
+.circle {
+    margin: 0 5px;
+}
+    
+
+
+    
+    
+}
